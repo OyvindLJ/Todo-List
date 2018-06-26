@@ -21,8 +21,11 @@
         displayTodos();
       };
       
-      // A way to edit a todo item.
-      todos[0] = 'changed!';
+      // A function to edit a todo item.
+      function changeTodo(position, newValue) {
+        todos[position] = newValue;
+        displayTodos();
+      };
       
       // A way to remove a todo item.
       todos.splice(0, 1);
