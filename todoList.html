@@ -15,8 +15,11 @@
         console.log('My todos:', todos);
       };
       
-      // A way to add a todo item.
-      todos.push();
+      // A function to add a todo item.
+      function addTodo(todo) {
+        todos.push();
+        displayTodos();
+      };
       
       // A way to edit a todo item.
       todos[0] = 'changed!';
