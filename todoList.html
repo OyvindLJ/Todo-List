@@ -28,7 +28,10 @@
       };
       
       // A way to remove a todo item.
-      todos.splice(0, 1);
+      function deleteTodo(position) {
+        todos.splice(position, 1);
+        displayTodos();
+      };
     </script>
   </body>
 </html>
