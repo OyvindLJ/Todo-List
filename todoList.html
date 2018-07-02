@@ -8,7 +8,7 @@
   <body>
     <script>
        // A place to store todo items.
-       var todos = ['item 1', 'item 2', 'item 3'];
+       var todos = [];
       
       // A function to display todo items.
       function displayTodos() {
@@ -16,8 +16,11 @@
       };
       
       // A function to add a todo item.
-      function addTodo(todo) {
-        todos.push();
+      function addTodo(todoText) {
+        todos.push({
+          todoText: todoText,
+          completed: false,
+        });
         displayTodos();
       };
       
