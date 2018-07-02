@@ -35,6 +35,11 @@
         todos.splice(position, 1);
         displayTodos();
       };
+      // A way to toggle a todo item
+      function toggleTodo(position) {
+        todos[position].completed = !todos[position].completed;
+        displayTodos();
+      };
     </script>
   </body>
 </html>
